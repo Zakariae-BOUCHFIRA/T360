@@ -210,7 +210,7 @@ input[type="checkbox"]:hover + span:before{
 .txt > input[type="text"]{
   background: white;
   content: "";
-  width: 94%;
+  width: 19em;
   height: 38px;
   border:none;
   outline: none;
@@ -229,7 +229,7 @@ input[type="checkbox"]:hover + span:before{
   font-weight: 500;
   cursor: pointer;
   color: white;
-  margin-left: 62%;
+  margin-left: 22em;
   border: 2px solid #1b8bb1;
   background-color: #1b8bb1;
   border-radius: 0 25px 25px 0;
@@ -248,7 +248,7 @@ input[type="checkbox"]:hover + span:before{
   color: #1b8bb1;
   border: 2px solid #1b8bb1;
   background-color: white;
-  margin-left: 300px;
+  margin-left: 22em;
   border-radius: 0 25px 25px 0;
   -webkit-border-radius: 0 25px 25px 0;
   -moz-border-radius: 0 25px 25px 0;
