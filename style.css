@@ -261,43 +261,42 @@ input[type="checkbox"]:hover + span:before{
 }
 
 
-@media only screen and (min-width: 600px) {
 
+@media only screen and (max-width: 380px) {
   .txt > input[type="text"]{
-    width: 260px;
+    width: 240px;
   }
   .txtbtnnext{
-    margin-left: 300px ;
+    margin-left: 230px ;
   }
   .txtbtnnext:hover{
-    margin-left: 300px ;
-  }
-}
-
-
-
-@media only screen and (max-width: 425px) {
-  .txt > input[type="text"]{
-    width: 250px;
-  }
-  .txtbtnnext{
-    margin-left: 270px ;
-  }
-  .txtbtnnext:hover{
-    margin-left: 270px ;
+    margin-left: 230px ;
   }
   
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 426px) {
   .txt > input[type="text"]{
     width: 250px;
   }
   .txtbtnnext{
-    margin-left: 300px ;
+    margin-left: 245px ;
   }
   .txtbtnnext:hover{
-    margin-left: 300px ;
+    margin-left: 245px ;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .txt > input[type="text"]{
+    width: 250px;
+  }
+  .txtbtnnext{
+    margin-left: 280px ;
+  }
+  .txtbtnnext:hover{
+    margin-left: 280px ;
   }
   
 }
