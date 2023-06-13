@@ -261,8 +261,32 @@ input[type="checkbox"]:hover + span:before{
 }
 
 
+@media only screen and (max-width: 425px) {
+
+  .txt > input[type="text"]{
+    width: 200px;
+  }
+  .txtbtnnext{
+    margin-left: 230px ;
+  }
+  .txtbtnnext:hover{
+    margin-left: 230px ;
+  }
+}
 
 
+@media only screen and (max-width: 600px) {
+
+  .txt > input[type="text"]{
+    width: 260px;
+  }
+  .txtbtnnext{
+    margin-left: 300px ;
+  }
+  .txtbtnnext:hover{
+    margin-left: 300px ;
+  }
+}
 
 
 
@@ -343,12 +367,6 @@ input[type="checkbox"]:hover + span:before{
 .description{
   margin-top: 15px;
  }
-
-
- 
-
-
-
 
 
 
