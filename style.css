@@ -210,7 +210,7 @@ input[type="checkbox"]:hover + span:before{
 .txt > input[type="text"]{
   background: white;
   content: "";
-  width: 248px;
+  width: 94%;
   height: 38px;
   border:none;
   outline: none;
@@ -229,7 +229,7 @@ input[type="checkbox"]:hover + span:before{
   font-weight: 500;
   cursor: pointer;
   color: white;
-  margin-left: 300px;
+  margin-left: 62%;
   border: 2px solid #1b8bb1;
   background-color: #1b8bb1;
   border-radius: 0 25px 25px 0;
