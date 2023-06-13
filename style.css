@@ -262,15 +262,15 @@ input[type="checkbox"]:hover + span:before{
 
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 480px) {
   .txt > input[type="text"]{
-    width: 240px;
+    width: 270px;
   }
   .txtbtnnext{
-    margin-left: 230px ;
+    margin-left: 300px ;
   }
   .txtbtnnext:hover{
-    margin-left: 230px ;
+    margin-left: 300px ;
   }
   
 }
@@ -280,23 +280,23 @@ input[type="checkbox"]:hover + span:before{
     width: 250px;
   }
   .txtbtnnext{
-    margin-left: 245px ;
+    margin-left: 250px ;
   }
   .txtbtnnext:hover{
-    margin-left: 245px ;
+    margin-left: 250px ;
   }
   
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .txt > input[type="text"]{
-    width: 250px;
+    width: 240px;
   }
   .txtbtnnext{
-    margin-left: 280px ;
+    margin-left: 260px ;
   }
   .txtbtnnext:hover{
-    margin-left: 280px ;
+    margin-left: 260px ;
   }
   
 }
