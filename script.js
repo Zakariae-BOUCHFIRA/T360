@@ -318,8 +318,6 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
    
 
 
-
-
    function isValidEmail(email) {
     var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return emailRegex.test(email);

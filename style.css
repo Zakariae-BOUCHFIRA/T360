@@ -210,17 +210,19 @@ input[type="checkbox"]:hover + span:before{
 .txt > input[type="text"]{
   background: white;
   content: "";
-  width: 19em;
+  width: 320px;
   height: 38px;
   border:none;
   outline: none;
   padding: 0 25px;
   border: 2px solid #1b8bb1;
   border-radius: 25px 0 0 25px;
-  -webkit-border-radius: 25px 0 0 25px;
-  -moz-border-radius: 25px 0 0 25px;
-  -ms-border-radius: 25px 0 0 25px;
-  -o-border-radius: 25px 0 0 25px;
+
+}
+
+.cont
+{
+  max-width:inherit;
 }
 
 .txtbtnnext{
@@ -229,7 +231,7 @@ input[type="checkbox"]:hover + span:before{
   font-weight: 500;
   cursor: pointer;
   color: white;
-  margin-left: 22em;
+  margin-left: 300px;
   border: 2px solid #1b8bb1;
   background-color: #1b8bb1;
   border-radius: 0 25px 25px 0;
@@ -246,9 +248,10 @@ input[type="checkbox"]:hover + span:before{
   font-weight: 500;
   cursor: pointer;
   color: #1b8bb1;
+  margin-left: 300px;
+
   border: 2px solid #1b8bb1;
   background-color: white;
-  margin-left: 22em;
   border-radius: 0 25px 25px 0;
   -webkit-border-radius: 0 25px 25px 0;
   -moz-border-radius: 0 25px 25px 0;
