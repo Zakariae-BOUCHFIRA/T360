@@ -277,13 +277,13 @@ input[type="checkbox"]:hover + span:before{
 
 @media only screen and (max-width: 426px) {
   .txt > input[type="text"]{
-    width: 250px;
+    width: 240px;
   }
   .txtbtnnext{
-    margin-left: 250px ;
+    margin-left: 230px ;
   }
   .txtbtnnext:hover{
-    margin-left: 250px ;
+    margin-left: 230px ;
   }
   
 }
