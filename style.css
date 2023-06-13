@@ -1,10 +1,6 @@
 html {
   height: 100vh;
-  background-image: url('./bg.png');
-  background-repeat: no-repeat;
-  background-position: center center;
   
-  background-attachment: fixed;
 }
 
 
@@ -12,7 +8,11 @@ html {
 body{
   height: 100vh;
   font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-
+  background-image: url('./bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  background-attachment: fixed;
 }
 
 

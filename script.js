@@ -329,19 +329,3 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
 
 
 
-  
-
-  //$('.popup').hide();
-
-
-  
-  function showHide(){
-    
-    // $("body").addClass("blur");
-    $('.popup').fadeIn();
-    setTimeout(function() {
-      $('.popup').fadeOut();
-      location.reload();
-    }, 4500);
-  }
-  
