@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  height: 100vh;
   background-image: url('./bg.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -10,9 +10,10 @@ html {
 
 
 body{
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+
 }
 
 
@@ -37,9 +38,7 @@ body{
   background-repeat: repeat-y;
   background-position: center center;
   background-attachment: fixed;
-
-
-
+  
 }
 
 .q{
@@ -285,12 +284,16 @@ input[type="checkbox"]:hover + span:before{
   display: none;
 }
 
+.blur{
+  filter:blur(5px);
+  -webkit-filter:blur(5px);
+}
 
 
 .popup{
   background-color: #f1f1f1;
-  position: absolute;
-  top: 30%;
+  position: fixed;  
+  top: 25%;
   width: 300px;
   padding: 40px;
   border-radius: 30px;
@@ -303,7 +306,9 @@ input[type="checkbox"]:hover + span:before{
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  display: block;
+  z-index: 9999;
+  box-shadow: 2px 2px 4px rgba(84, 83, 83, 0.4);
+  display: none;
 }
 
 
