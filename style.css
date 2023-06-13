@@ -1,0 +1,371 @@
+html {
+  height: 100%;
+  background-image: url('./bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  background-attachment: fixed;
+}
+
+
+
+body{
+  height: 100%;
+  margin: 0;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+
+.logo{
+  margin-bottom: 50px;
+}
+
+.question {
+  display: none;
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 0px auto 0px auto;
+  padding: 10px;
+  background-color: #fff;
+  height: 96vh;
+  position: relative;
+  background-image: url('./bg.png');
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
+
+
+
+}
+
+.q{
+  border-radius: 10px;
+  padding: 10px;
+  font-weight:500 ;
+  font-size: 12pt;
+  background-color: #ebe6e6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: fit-content;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  display: none;
+}
+
+span{
+  margin-bottom: -16px;
+  position: relative;
+  color: #1b8bb1;
+  border: 2px solid #1b8bb1;
+  padding: 5px;
+  border-radius: 17px ;
+  font-weight: 500;
+  font-size: 10pt;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 17px ;
+  -moz-border-radius: 17px ;
+  -ms-border-radius: 17px ;
+  -o-border-radius: 17px ;
+  cursor: pointer;
+}
+span:before{
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 2px solid #1b8bb1;
+  border-radius: 50%;
+  margin-right: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+input[type="radio"]:checked + span{
+  background-color: #1b8bb1;
+  color: white;
+}
+
+
+input[type="radio"]:hover + span{
+  background-color: #1b8bb1;
+  color: white;
+}
+
+input[type="radio"]:checked + span:before{
+  height: 7px;
+  width: 7px;  
+  border:5px solid white;
+  background-color: #1b8bb1;
+}
+
+input[type="radio"]:hover + span:before{
+  height: 7px;
+  width: 7px;  
+  border:5px solid white;
+  background-color: #1b8bb1;
+}
+
+input[type="checkbox"]:checked + span{
+  background-color: #1b8bb1;
+  color: white;
+}
+
+
+input[type="checkbox"]:hover + span{
+  background-color: #1b8bb1;
+  color: white;
+}
+
+input[type="checkbox"]:checked + span:before{
+  height: 7px;
+  width: 7px;  
+  border:5px solid white;
+  background-color: #1b8bb1;
+}
+
+input[type="checkbox"]:hover + span:before{
+  height: 7px;
+  width: 7px;  
+  border:5px solid white;
+  background-color: #1b8bb1;
+}
+
+
+.spansexe{
+  width: 100px;
+}
+
+
+
+
+
+.nxtQ{
+  color: white;
+  border: 2px solid #1b8bb1;
+  background-color: #1b8bb1;
+  font-size: 12pt;
+  padding: 10px 20px;
+  border-radius: 70px;
+  font-weight: 500;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.nxtQ:hover{
+  cursor: pointer;
+  color: #1b8bb1;
+  border: 2px solid #1b8bb1;
+  background-color: white;
+}
+
+
+.responseD{
+  display: flex;
+  align-items: end;
+  direction: rtl;
+
+}
+.response{
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  text-align: right;
+  font-weight:500 ;
+  font-size: 12pt;
+  background-color: #5f62a0;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+
+.txt{
+  position: fixed;
+  display: inline-block;
+  box-sizing: border-box;
+  bottom: 20px;
+}
+
+.txt > input[type="text"]{
+  background: white;
+  content: "";
+  width: 248px;
+  height: 38px;
+  border:none;
+  outline: none;
+  padding: 0 25px;
+  border: 2px solid #1b8bb1;
+  border-radius: 25px 0 0 25px;
+  -webkit-border-radius: 25px 0 0 25px;
+  -moz-border-radius: 25px 0 0 25px;
+  -ms-border-radius: 25px 0 0 25px;
+  -o-border-radius: 25px 0 0 25px;
+}
+
+.txtbtnnext{
+  width: 100px;
+  height: 42px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  margin-left: 300px;
+  border: 2px solid #1b8bb1;
+  background-color: #1b8bb1;
+  border-radius: 0 25px 25px 0;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+
+}
+
+.txtbtnnext:hover{
+  width: 100px;
+  height: 42px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #1b8bb1;
+  border: 2px solid #1b8bb1;
+  background-color: white;
+  margin-left: 300px;
+  border-radius: 0 25px 25px 0;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+
+}
+
+
+
+
+
+
+
+
+.error{
+  border: 1px solid;
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  color: #D8000C;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  z-index: 99;
+  background-color: #FFBABA;
+  border-radius:40px ;
+  -webkit-border-radius:40px ;
+  -moz-border-radius:40px ;
+  -ms-border-radius:40px ;
+  -o-border-radius:40px ;
+  display: none;
+}
+
+
+
+.popup{
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 30%;
+  width: 300px;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+
+.icon{
+  color: #f1f1f1;
+  font-size: 100px;
+  border: 5px solid f1f1f1;
+  background-color: green;
+  width: 130px;
+  margin: auto;
+  margin-top: -100px;
+  text-align: center;
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+}
+
+
+
+
+.title{
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+
+.description{
+  margin-top: 15px;
+ }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

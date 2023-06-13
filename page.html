@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IA, OVNI et Conscience Humaine</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="chat-container">
+    <div class="bg">
+      
+    </div>
+    <img class="logo" src="./Logitude2.png" width="130px" alt="">
+    <form onsubmit="showHide(); return false;">
+
+      
+      <div class="error">
+      </div>
+      
+      <div class="question" id="question1">
+          <p class="q">Êtes vous ?</p>
+          <label class="option">
+            <input type="radio" name="rs1" value="1">
+            <span class="spansexe">Homme</span>
+          </label>
+          <br>
+          <label class="option">
+            <input type="radio" name="rs1" value="2">
+            <span class="spansexe">Femme</span>
+          </label><br>
+          <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+
+
+      <div class="question" id="question2">
+        <p class="q">Quel âge avez-vous ?</p>
+        <label><input type="radio" name="rs2" value="1"> <span>18-24 ans</span></label><br>
+        <label><input type="radio" name="rs2" value="2"> <span>25-34 ans</span></label><br>
+        <label><input type="radio" name="rs2" value="3"> <span>35-44 ans</span></label><br>
+        <label><input type="radio" name="rs2" value="4"> <span>45-54 ans</span></label><br>
+        <label><input type="radio" name="rs2" value="5"> <span>55-64 ans</span></label><br>
+        <label><input type="radio" name="rs2" value="6"> <span>65 ans ou plus</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question3">
+        <p class="q">Quelle est votre code postal ?</p>
+        <label class="txt"><input type="text" maxlength="5" name="rs3" id="rs3" required><br></label>
+        <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question4">
+        <p class="q">Quelle est votre profession ?</p>
+        <label class="txt"><input type="text" name="rs4" id="rs4" required><br></label>
+        <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+      </div>
+
+
+      <div class="question" id="question5">
+        <p class="q">Avez-vous entendu parler de l'Intelligence Artificielle (IA) ?</p>
+        <label><input type="radio" name="q1" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q1" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question6">
+        <p class="q">Pensez-vous que l'IA aura un impact significatif dans notre quotidien dans un avenir proche ?</p>
+        <label><input type="radio" name="q2" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q2" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question7">
+        <p class="q">Dans quels domaines pensez-vous que l'IA aura le plus d'impact ? (3 réponses possibles)</p>
+        <label><input type="checkbox" name="q3" value="1"> <span>Familial et Social</span></label><br>
+        <label><input type="checkbox" name="q3" value="2"> <span>Santé et Recherche</span></label><br>
+        <label><input type="checkbox" name="q3" value="3"> <span>Finance et Économie</span></label><br>
+        <label><input type="checkbox" name="q3" value="4"> <span>Éducation et Apprentissage</span></label><br>
+        <label><input type="checkbox" name="q3" value="5"> <span>Transport et Logistique</span></label><br>
+        <label><input type="checkbox" name="q3" value="6"> <span>Technologie et Industrie</span></label><br>
+        <label><input type="checkbox" name="q3" value="7"> <span>Divertissement et Médias</span></label><br>
+        <label><input type="checkbox" name="q3" value="8" id="q3_autre_checkbox"><span>Autre</span></label><br>
+        <label class="txt"><input type="text" name="q3_other" id="q3_other_input" style="display: none;"></label><br>
+        <button type="button" id="btnq3" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+      <div class="question " id="question8">
+        <p class="q">Selon vous, quels seraient les avantages potentiels de l'IA dans la recherche ? (3 réponses possibles)</p>
+        <label><input type="checkbox" name="q4" value="1"> <span>Automatisation de tâches répétitives et ennuyeuses</span></label><br>
+        <label><input type="checkbox" name="q4" value="2"> <span>Amélioration de l'efficacité des processus et des services</span></label><br>
+        <label><input type="checkbox" name="q4" value="3"> <span>Prédiction et prévention des problèmes dans divers domaines</span></label><br>
+        <label><input type="checkbox" name="q4" value="4"> <span>Assistance dans la prise de décisions complexes</span></label><br>
+        <label><input type="checkbox" name="q4" value="5"> <span>Amélioration de la sécurité et de la protection des données</span></label><br>
+        <label><input type="checkbox" name="q4" value="6"> <span>Accès facilité à l'information et aux ressources</span></label><br>
+        <label><input type="checkbox" name="q4" value="7" id="q4_autre_checkbox"><span>Autre</span></label><br>
+        <label class="txt"><input type="text" name="q4_other" id="q4_other_input" style="display: none;"></label>
+        <button type="button" id="btnq4" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+      
+      <div class="question " id="question9">
+        <p class="q">Avez-vous déjà été témoin d'une observation d'OVNI ?</p>
+        <label><input type="radio" name="q5" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q5" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question10">
+        <p class="q">Croyez-vous que les OVNI représentent une vie extraterrestre ou des civilisations avancées ?</p>
+        <label><input type="radio" name="q6" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q6" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question11">
+        <p class="q">Croyez-vous qu'il existe un lien entre la conscience humaine et le phénomène des OVNI ?</p>
+        <label><input type="radio" name="q7" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q7" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question12">
+        <p class="q">Selon vous, quelle est l'explication la plus probable des observations d'OVNI ?</p>
+        <label><input type="radio" name="q8" value="1"><span>Identification erronée d'aéronefs ou d'objets conventionnels</span></label><br>
+        <label><input type="radio" name="q8" value="2"><span>Projets militaires secrets</span></label><br>
+        <label><input type="radio" name="q8" value="3"><span>Phénomènes naturels (par exemple, phénomènes météorologiques, météores)</span></label><br>
+        <label><input type="radio" name="q8" value="4"><span>Facteurs psychologiques ou perceptuels (par exemple, illusions, canulars)</span></label><br>
+        <label><input type="radio" name="q8" value="5"><span>Visites extraterrestres</span></label><br>
+        <label><input type="radio" name="q8" value="6"><span>Êtres/entités provenant d'autres dimensions ou réalités parallèles</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question13">
+        <p class="q">Croyez-vous que l'IA a le potentiel de manifester une conscience ou une auto-conscience ?</p>
+        <label><input type="radio" name="q9" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q9" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question14">
+        <p class="q">Si l'IA devait analyser les données d'observations d'OVNI, pensez-vous qu'elle pourrait identifier des schémas ou des corrélations que les humains pourraient manquer ?</p>
+        <label><input type="radio" name="q10" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q10" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question15">
+        <p class="q">Seriez-vous intéressé(e) à participer à un projet de recherche combinant l'IA et l'exploration de la conscience humaine ?</p>
+        <label><input type="radio" name="q11" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q11" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question16">
+        <p class="q">Adresse e-mail</p>
+        <label class="txt"><input type="text" name="email" id="email" ><br></label>
+        <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+      </div>
+
+
+      <div class="question " id="question17">
+        <p class="q">Vous voulez arrondir vos fins de mois en vous amusant ? Gagner de l’argent en donnant votre avis! C’est possible en faisant partie de notre panel gratuitement.</p>
+        <label><input type="radio" name="q12" value="1"> <span>Oui</span></label><br>
+        <label><input type="radio" name="q12" value="2"> <span>Non</span></label><br>
+        <button type="button" class="nextQuestion nxtQ">Suivant</button>
+      </div>
+
+
+        
+      <br>
+      <input type="button" class="nxtQ" id="submit" onclick="showHide();" value="Envoyer"/>
+    </form>
+    
+    
+  </div>
+
+
+
+  <div class="popup">
+    <div class="icon">
+      <i class="fa fa-check"></i>
+    </div>
+    <div class="title">Le questionnaire est terminé</div>
+    <div class="description">Nous vous remercions pour votre participation à cette étude.</div>
+  </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
