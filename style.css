@@ -293,10 +293,10 @@ input[type="checkbox"]:hover + span:before{
     width: 240px;
   }
   .txtbtnnext{
-    margin-left: 260px ;
+    margin-left: 250px ;
   }
   .txtbtnnext:hover{
-    margin-left: 260px ;
+    margin-left: 250px ;
   }
   
 }
