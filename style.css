@@ -213,9 +213,6 @@ input[type="checkbox"]:hover + span:before{
   text-align: center;
 }
 
-.jj{
-  bottom: 20px;
-}
 
 .txt > input[type="text"]{
   background: white;
