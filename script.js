@@ -2,7 +2,7 @@ const on= ["Oui","Non"];
 const rs1= ["Homme","Femme"];
 const rs2= ["18-24 ans","25-34 ans","35-44 ans","45-54 ans","55-64 ans","65 ans ou plus"];
 const q3= ["Familial et Social","Santé et Recherche","Finance et Économie","Éducation et Apprentissage","Transport et Logistique","Technologie et Industrie","Divertissement et Médias","Autre"];
-const q4= ["Automatisation de tâches répétitives et ennuyeuses","Amélioration de l'efficacité des processus et des services","Prédiction et prévention des problèmes dans divers domaines","Assistance dans la prise de décisions complexes","Amélioration de la sécurité et de la protection des données","Accès facilité à l'information et aux ressources","Autre"];
+const q4= ["Automatisation de tâches répétitives et ennuyeuses","Amélioration de l'efficacité des processus et des services","Prédiction et prévention des problèmes dans divers domaines","Assistance dans la prise de décisions complexes","Amélioration de la sécurité et de la protection des données","Accès facile à l'information et aux ressources","Autre"];
 const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Projets militaires secrets","Phénomènes naturels (par exemple, phénomènes météorologiques, météores)","acteurs psychologiques ou perceptuels (par exemple, illusions, canulars)","Visites extraterrestres","Êtres/entités provenant d'autres dimensions ou réalités parallèles"]
 
 
