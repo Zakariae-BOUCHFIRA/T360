@@ -21,6 +21,9 @@
         
         <div class="error">
         </div>
+
+
+        
         
         <div class="question" id="question1">
             <p class="q">Êtes vous ?</p>
@@ -53,15 +56,21 @@
   
         <div class="question " id="question3">
           <p class="q">Quel est votre code postal ?</p>
-          <label class="txt"><input type="text" maxlength="5" name="rs3" id="rs3" required><br></label>
-          <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+          <div class="in jj">
+            <label class="txt"><input type="text" maxlength="5" name="rs3" id="rs3" required></label>
+            <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
+          </div>
+          
         </div>
   
   
         <div class="question " id="question4">
           <p class="q">Quel est votre profession ?</p>
-          <label class="txt"><input type="text" name="rs4" id="rs4" required><br></label>
-          <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+          <div class="in">
+            <label class="txt"><input type="text" name="rs4" id="rs4" required></label>
+            <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
+          </div>
+
         </div>
   
   
@@ -91,8 +100,11 @@
           <label><input type="checkbox" name="q3" value="6"> <span>Technologie et Industrie</span></label><br>
           <label><input type="checkbox" name="q3" value="7"> <span>Divertissement et Médias</span></label><br>
           <label><input type="checkbox" name="q3" value="8" id="q3_autre_checkbox"><span>Autre</span></label><br>
-          <label class="txt"><input type="text" name="q3_other" id="q3_other_input" style="display: none;"></label><br>
-          <button type="button" id="btnq3" class="nextQuestion nxtQ">Suivant</button>
+          <div class="in">
+            <label class="txt"><input type="text"  name="q3_other" id="q3_other_input" style="display: none;"></label>
+            <button type="button" id="btnq3" class="nextQuestion txtbtnnext" style="display: none;">Suivant</button>
+          </div>
+          <button type="button" id="btnq33" class="nextQuestion nxtQ">Suivant</button>
         </div>
   
         <div class="question " id="question8">
@@ -104,8 +116,11 @@
           <label><input type="checkbox" name="q4" value="5"> <span>Amélioration de la sécurité et de la protection des données</span></label><br>
           <label><input type="checkbox" name="q4" value="6"> <span>Accès facilité à l'information et aux ressources</span></label><br>
           <label><input type="checkbox" name="q4" value="7" id="q4_autre_checkbox"><span>Autre</span></label><br>
-          <label class="txt"><input type="text" name="q4_other" id="q4_other_input" style="display: none;"></label>
-          <button type="button" id="btnq4" class="nextQuestion nxtQ">Suivant</button>
+          <div class="in">
+            <label class="txt"><input type="text"  name="q4_other" id="q4_other_input" style="display: none;"></label>
+            <button type="button" id="btnq4" class="nextQuestion txtbtnnext" style="display: none;">Suivant</button>
+          </div>
+          <button type="button" id="btnq44" class="nextQuestion nxtQ">Suivant</button>
         </div>
         
         <div class="question " id="question9">
@@ -170,8 +185,10 @@
   
         <div class="question " id="question16">
           <p class="q">Votre adresse e-mail ?</p>
-          <label class="txt"><input type="text" name="email" id="email" ><br></label>
-          <button type="button" class="txt txtbtnnext nextQuestion">Suivant</button>
+          <div class="in ">
+            <label class="txt"><input type="text"  name="email" id="email" required></label>
+            <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
+          </div>
         </div>
   
   

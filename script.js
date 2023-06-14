@@ -16,14 +16,18 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
     
     $("#q3_autre_checkbox").change(function() {
       if ($(this).is(":checked")) {
+        $(".in").show();
         $("#q3_other_input").show();
-        $("#btnq3").removeClass("nxtQ");
-        $("#btnq3").addClass("txt txtbtnnext");
+        $("#btnq3").show();
+        $("#btnq33").hide();
+       
 
       } else {
+        $(".in").hide();
         $("#q3_other_input").hide();
-        $("#btnq3").removeClass("txt txtbtnnext");
-        $("#btnq3").addClass("nxtQ");
+        $("#btnq3").hide();
+        $("#btnq33").show();
+        
       }
     });
   });
@@ -38,14 +42,18 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
     
     $("#q4_autre_checkbox").change(function() {
       if ($(this).is(":checked")) {
-        $("#btnq4").removeClass("nxtQ");
+        $(".in").show();
         $("#q4_other_input").show();
-        $("#btnq4").addClass("txt txtbtnnext");
-      } else {
-        $("#q4_other_input").hide();
-        $("#btnq4").removeClass("txt txtbtnnext");
-        $("#btnq4").addClass("nxtQ");
+        $("#btnq4").show();
+        $("#btnq44").hide();
+       
 
+      } else {
+        $(".in").hide();
+        $("#q4_other_input").hide();
+        $("#btnq4").hide();
+        $("#btnq44").show();
+        
       }
     });
   });
