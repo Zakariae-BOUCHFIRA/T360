@@ -83,7 +83,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
               // Validate current question before proceeding to the next one
             var currentInput = currentQuestion.find("input:radio:checked, input:checkbox:checked, input:text").closest("label").find("input");
             
-            if (currentInput.length === 0 || (currentInput.is(":radio") && currentInput.filter(":checked").length === 0) || (currentInput.is(":checkbox") && currentInput.filter(":checked").length === 0) || (currentInput.is(":text") && currentInput.val() == "") ) {
+            if (currentInput.length === 0 || (currentInput.is(":radio") && currentInput.filter(":checked").length === 0) || (currentInput.is(":checkbox") && currentInput.filter(":checked").length === 0) || (currentInput.is(":text") && currentInput.val() == "" && currentInput.attr("name")!="email") ) {
                 // Show an error message or perform any necessary validation logic
                 $('.error').html("Veuillez choisir une réponse");
 
@@ -138,22 +138,26 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
                   }
                 }
 
-                if(currentQuestion.attr("id")=="question16")
+                if(currentQuestion.attr("id")=="question17")
                 {
                   let email=$('#email').val();
-                  if(!isValidEmail(email))
+                  if(email!="")
                   {
-                    
-                    $('.error').html("L'adresse mail cest incorrect");
+                    if(!isValidEmail(email))
+                    {
+                      
+                      $('.error').html("L'adresse mail cest incorrect");
 
-                    $('.error').fadeIn();
-              
-                    setTimeout(function() {
-                      $('.error').fadeOut();
-                    }, 3000);
-                    return;
+                      $('.error').fadeIn();
+                
+                      setTimeout(function() {
+                        $('.error').fadeOut();
+                      }, 3000);
+                      return;
 
+                    }
                   }
+                  
                 }
 
                 if(currentInput.attr("name")=="q4")
