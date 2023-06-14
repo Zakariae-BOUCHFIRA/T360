@@ -65,7 +65,7 @@
   
   
         <div class="question " id="question4">
-          <p class="q">Quel est votre profession ?</p>
+          <p class="q">Quelle est votre profession ?</p>
           <div class="in">
             <label class="txt"><input type="text" name="rs4" id="rs4" required></label>
             <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
@@ -114,7 +114,7 @@
           <label><input type="checkbox" name="q4" value="3"> <span>Prédiction et prévention des problèmes dans divers domaines</span></label><br>
           <label><input type="checkbox" name="q4" value="4"> <span>Assistance dans la prise de décisions complexes</span></label><br>
           <label><input type="checkbox" name="q4" value="5"> <span>Amélioration de la sécurité et de la protection des données</span></label><br>
-          <label><input type="checkbox" name="q4" value="6"> <span>Accès facilité à l'information et aux ressources</span></label><br>
+          <label><input type="checkbox" name="q4" value="6"> <span>Accès facile à l'information et aux ressources</span></label><br>
           <label><input type="checkbox" name="q4" value="7" id="q4_autre_checkbox"><span>Autre</span></label><br>
           <div class="in">
             <label class="txt"><input type="text"  name="q4_other" id="q4_other_input" style="display: none;"></label>
@@ -168,7 +168,7 @@
   
   
         <div class="question " id="question14">
-          <p class="q">Si l'IA devait analyser les données d'observations d'OVNI, pensez-vous qu'elle pourrait identifier des schémas ou des corrélations que les humains pourraient manquer ?</p>
+          <p class="q">Si l'IA devait analyser les données d'observation d'OVNI, pensez-vous qu'elle pourrait identifier des schémas ou des corrélations que les humains pourraient manquer ?</p>
           <label><input type="radio" name="q10" value="1"> <span>Oui</span></label><br>
           <label><input type="radio" name="q10" value="2"> <span>Non</span></label><br>
           <button type="button" class="nextQuestion nxtQ">Suivant</button>
@@ -194,7 +194,7 @@
   
   
         <div class="question " id="question17">
-          <p class="q">Votre adresse e-mail ?</p>
+          <p class="q">Pourriez-vous nous communiquer votre adresse mail ? <i>(facultatif)</i> </p>
           <div class="in ">
             <label class="txt"><input type="text"  name="email" id="email" required></label>
             <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
@@ -217,7 +217,41 @@
 
 
   
+  <!-- <script>
+    // Add event listener to submit button
+    document.getElementById('submit').addEventListener('click', sendData);
 
+    // Function to collect form data and send it to PHP
+    function sendData() {
+      alert("hhhh");
+      // Collect form data
+      var formData = {
+        rs1: document.querySelector('input[name="rs1"]:checked').value,
+        rs2: document.querySelector('input[name="rs2"]:checked').value,
+        rs3: document.getElementById('rs3').value,
+        rs4: document.getElementById('rs4').value,
+        // Add other form fields here
+      };
+
+      // Convert form data to JSON string
+      var jsonData = JSON.stringify(formData);
+
+      // Send AJAX request to PHP
+      $.ajax({
+        url: 'process_form.php',
+        type: 'POST',
+        data: { data: jsonData },
+        success: function(response) {
+          // Handle response from PHP
+          console.log(response);
+        },
+        error: function(xhr, status, error) {
+          // Handle error
+          console.error(error);
+        }
+      });
+    }
+  </script> -->
   <script src="script.js"></script>
 </body>
 </html>

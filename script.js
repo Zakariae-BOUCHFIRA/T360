@@ -188,25 +188,25 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
             else if(currentInput.attr("name") == "rs2") {
               $("#question2 input[name=rs2]:checked").each(function() {
                 checkedValues.push(rs2[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "rs3"){
-              currentQuestion.append("<div class='responseD'><p class='response'>"+ $("#rs3").val() + "</p>");
+              currentQuestion.append("<div class='responseD'><p class='response'>"+ $("#rs3").val() + "</p></div>");
             }
             else if(currentInput.attr("name") == "rs4"){
-              currentQuestion.append("<div class='responseD'><p class='response'>"+ $("#rs4").val() + "</p>");
+              currentQuestion.append("<div class='responseD'><p class='response'>"+ $("#rs4").val() + "</p></div>");
             }
             else if(currentInput.attr("name") == "q1") {
               $("#question5 input[name=q1]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q2") {
               $("#question6 input[name=q2]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q3") {
@@ -216,11 +216,11 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
               });
               if($("#q3_autre_checkbox").is(":checked"))
               {
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") +"( "+$("#q3_other_input").val()+ " ) </p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") +"( "+$("#q3_other_input").val()+ " ) </p></div>");
               }
               else
               {
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               }
                 
             }
@@ -231,62 +231,62 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
               });
               if($("#q4_autre_checkbox").is(":checked"))
               {
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") +"( "+$("#q4_other_input").val()+ " ) </p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") +"( "+$("#q4_other_input").val()+ " ) </p></div>");
               }
               else
               {
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               }
             }
             else if(currentInput.attr("name") == "q5") {
               $("#question9 input[name=q5]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q6") {
               $("#question10 input[name=q6]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q7") {
               $("#question11 input[name=q7]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q8") {
               $("#question12 input[name=q8]:checked").each(function() {
                 checkedValues.push(q8[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q9") {
               $("#question13 input[name=q9]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q10") {
               $("#question14 input[name=q10]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "q11") {
               $("#question15 input[name=q11]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
             else if(currentInput.attr("name") == "email"){
-              currentQuestion.append("<div class='responseD'><p class='response'>" + $("#email").val() + "</p>");
+              currentQuestion.append("<div class='responseD'><p class='response'>" + $("#email").val() + "</p></div>");
             }
             else if(currentInput.attr("name") == "q12") {
               $("#question17 input[name=q12]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p>");
+                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
               });
             }
         
