@@ -138,7 +138,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
                   }
                 }
 
-                if(currentQuestion.attr("id")=="question16")
+                if(currentQuestion.attr("id")=="question17")
                 {
                   let email=$('#email').val();
                   if(!isValidEmail(email))
