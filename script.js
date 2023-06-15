@@ -16,23 +16,19 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
     
     $("#q3_autre_checkbox").change(function() {
       if ($(this).is(":checked")) {
-        $(".in").show();
         $("#q3_other_input").show();
         $("#btnq3").show();
         $("#btnq33").hide();
-       
 
       } else {
-        $(".in").hide();
         $("#q3_other_input").hide();
         $("#btnq3").hide();
         $("#btnq33").show();
         
       }
     });
-  });
+  
 
-  $(document).ready(function() {
     $("input[name='q4']").change(function() {
       var $checkboxes = $("input[name='q4']:checked");
       if ($checkboxes.length > 3) {
@@ -42,21 +38,18 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
     
     $("#q4_autre_checkbox").change(function() {
       if ($(this).is(":checked")) {
-        $(".in").show();
         $("#q4_other_input").show();
         $("#btnq4").show();
         $("#btnq44").hide();
        
 
       } else {
-        $(".in").hide();
         $("#q4_other_input").hide();
         $("#btnq4").hide();
         $("#btnq44").show();
         
       }
     });
-  });
 
 
     $('#submit').hide();
@@ -177,7 +170,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
                   $("#submit").show();
                 }
             }
-
+            
             var checkedValues = [];
             if(currentInput.attr("name") == "rs1") {
               $("#question1 input[name=rs1]:checked").each(function() {
@@ -337,5 +330,5 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
 
 
 
-
+});
 

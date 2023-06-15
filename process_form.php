@@ -1,30 +1,40 @@
 <?php
-// Retrieve form data
-$rs1 = $_POST['rs1'];
-$rs2 = $_POST['rs2'];
-$rs3 = $_POST['rs3'];
-$rs4 = $_POST['rs4'];
-$q1 = $_POST['q1'];
-$q2 = $_POST['q2'];
-$q3 = $_POST['q3'];
-$q4 = $_POST['q4'];
-$q5 = $_POST['q5'];
-$q6 = $_POST['q6'];
-$q7 = $_POST['q7[]']; // Use [] to treat it as an array
-$q8 = $_POST['q8[]'];
-$q9 = $_POST['q9'];
-$q10 = $_POST['q10'];
-$q11 = $_POST['q11'];
-$email = $_POST['email'];
-$q12 = $_POST['q12'];
+
+
+$jsonData = $_POST['data'];
+
+// Parse the JSON string into an object or array
+$formData = json_decode($jsonData, true);
+
+// Access the form data
+$rs1 = $formData['rs1'];
+$rs2 = $formData['rs2'];
+$rs3 = $formData['rs3'];
+$rs4 = $formData['rs4'];
+$q1 = $formData['q1'];
+$q2 = $formData['q2'];
+$q3 = $formData['q3'];
+$q3Autre = $formData['q3Autre'];
+$q4 = $formData['q4'];
+$q4Autre = $formData['q4Autre'];
+$q5 = $formData['q5'];
+$q6 = $formData['q6'];
+$q7 = $formData['q7'];
+$q8 = $formData['q8'];
+$q9 = $formData['q9'];
+$q10 = $formData['q10'];
+$q11 = $formData['q11'];
+$q12 = $formData['q12'];
+$email = $formData['email'];
+
 
 // Validate and sanitize the data as needed
 
 // Connect to the database (replace the placeholders with your database credentials)
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database";
+$username = "root";
+$password = "";
+$dbname = "rs";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -34,13 +44,14 @@ if ($conn->connect_error) {
 }
 
 // Prepare the SQL statement to insert the form data into the database (replace 'table_name' with the actual table name)
-$sql = "INSERT INTO table_name (rs1, rs2, rs3, rs4, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, email, q12)
-        VALUES ('$rs1', '$rs2', '$rs3', '$rs4', '$q1', '$q2', '$q3', '$q4', '$q5', '$q6', '" . implode(",", $q7) . "', '$q8', '$q9', '$q10', '$q11', '$email', '$q12')";
+$sql = "INSERT INTO rs1 (rs1, rs2, rs3, rs4, q1, q2, q3, q3Autre, q4, q4Autre, q5, q6, q7, q8, q9, q10, q11, email, q12)
+        VALUES ('$rs1', '$rs2', '$rs3', '$rs4', '$q1', '$q2', '$q3', '$q3Autre', '$q4', '$q4Autre', '$q5', '$q6', '$q7', '$q8', '$q9', '$q10', '$q11', '$email', '$q12')";
 
+    echo $sql;
 if ($conn->query($sql) === TRUE) {
-    echo "Form data stored successfully.";
+    echo "Succes";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error";
 }
 
 // Close the database connection
