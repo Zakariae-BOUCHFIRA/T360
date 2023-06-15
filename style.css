@@ -314,7 +314,7 @@ input[type="checkbox"]:hover + span:before{
 } */
 
 
-@media only screen and (min-width: 1367px) {
+@media only screen and (min-width: 1152px) and (min-height: 768px){
   .container{
     max-width: 720px;
   }
@@ -351,6 +351,10 @@ input[type="checkbox"]:hover + span:before{
   }
 
 }
+
+
+
+
 
 
 
