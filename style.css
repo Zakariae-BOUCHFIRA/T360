@@ -329,7 +329,7 @@ input[type="checkbox"]:hover + span:before{
   }
   .q{
 
-    font-size: 15pt;
+    font-size: 13pt;
 
   }
 
@@ -340,18 +340,18 @@ input[type="checkbox"]:hover + span:before{
 
   .nxtQ{
 
-    font-size: 15pt;
+    font-size: 13pt;
 
   }
 
   .response{
 
-    font-size: 15pt;
+    font-size: 13pt;
 
   }
 
   .txtbtnnext{
-    font-size: 15pt;
+    font-size: 13pt;
   }
 
   .logo{
@@ -381,32 +381,7 @@ input[type="checkbox"]:hover + span:before{
   input[type="checkbox"] + span{
     width: 50%;
   }
-  .q{
-
-    font-size: 15pt;
-
-  }
-
-  span{
-
-    font-size: 13pt;
-  }
-
-  .nxtQ{
-
-    font-size: 15pt;
-
-  }
-
-  .response{
-
-    font-size: 15pt;
-
-  }
-
-  .txtbtnnext{
-    font-size: 15pt;
-  }
+  
 
   .logo{
     margin-bottom: 80px;
