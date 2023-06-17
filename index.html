@@ -11,13 +11,16 @@
 
 </head>
 <body>
+  <div class="bg">
+      
+  </div>
   <div class="container">
-    <div class="bg">
-      
-    </div>
+    
     <div class="chat-container">
+      <div class="logo">
+        <img src="./Logitude2.png" width="130px" alt="">
+      </div>
       
-      <img class="logo" src="./Logitude2.png" width="130px" alt="">
       <form action="./merci.html">
   
         <input type="hidden" id="submitted" value="false">
@@ -39,7 +42,7 @@
               <input type="radio" name="rs1" value="2">
               <span class="spansexe">Femme</span>
             </label><br>
-            <div class="in inb">
+            <div class="in">
               <button type="button" class="nextQuestion nxtQ">Suivant</button>
             </div>
         </div>
@@ -151,14 +154,7 @@
         </div>
   
   
-        <div class="question " id="question10">
-          <p class="q">Croyez-vous que les OVNI représentent une vie extraterrestre ou des civilisations avancées ?</p>
-          <label><input type="radio" name="q6" value="1"> <span>Oui</span></label><br>
-          <label><input type="radio" name="q6" value="2"> <span>Non</span></label><br>
-          <div class="in">
-            <button type="button" class="nextQuestion nxtQ">Suivant</button>
-          </div>
-        </div>
+        
   
   
         <div class="question " id="question11">
@@ -186,7 +182,7 @@
   
   
         <div class="question " id="question13">
-          <p class="q">Croyez-vous que l'IA a le potentiel de manifester une conscience ou une auto-conscience ?</p>
+          <p class="q">Croyez-vous que l'IA a ou aura dans le futur le potentiel pour remplacer la pensée humaine ?</p>
           <label><input type="radio" name="q9" value="1"> <span>Oui</span></label><br>
           <label><input type="radio" name="q9" value="2"> <span>Non</span></label><br>
           <div class="in">
@@ -232,9 +228,10 @@
           <div class="in ">
             <label class="txt"><input type="text"  name="email" id="email" required></label>
             <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
-            <button type="submit" style="margin-top: 80px;" class=" nxtQ" id="submit">Envoyer</button>
+            <button type="submit" style="margin-top: 80px;" class="nxtQ" id="submit">Envoyer</button>
           </div>
         </div>
+        
   
   
           
@@ -285,7 +282,6 @@
           q4: q4o.join("/"),
           q4Autre:document.getElementById('q4_other_input').value,
           q5: document.querySelector('input[name="q5"]:checked').value,
-          q6: document.querySelector('input[name="q6"]:checked').value,
           q7: document.querySelector('input[name="q7"]:checked').value,
           q8: document.querySelector('input[name="q8"]:checked').value,
           q9: document.querySelector('input[name="q9"]:checked').value,

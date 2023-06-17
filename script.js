@@ -237,12 +237,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
                 currentQuestion.append("<div class='responseD'><p class='response'>" + checkedValues.join(", ") + "</p></div>");
               });
             }
-            else if(currentInput.attr("name") == "q6") {
-              $("#question10 input[name=q6]:checked").each(function() {
-                checkedValues.push(on[$(this).val()-1]);
-                currentQuestion.append("<div class='responseD'><p class='response'>"+ checkedValues.join(", ") + "</p></div>");
-              });
-            }
+
             else if(currentInput.attr("name") == "q7") {
               $("#question11 input[name=q7]:checked").each(function() {
                 checkedValues.push(on[$(this).val()-1]);
