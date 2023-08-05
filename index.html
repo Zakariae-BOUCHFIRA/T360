@@ -8,6 +8,8 @@
 
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -29,9 +31,16 @@
         </div>
 
 
-        
+        <div class="question">
+          <p class="q">Bonjour et bienvenue!<br>Nous menons une enquête sur l'intelligence artificielle (IA) et les OVNI. <br>Votre opinion nous intéresse.<br>Appuyez sur Démarrer et donnez-nous votre Avis.</p>
+          <label><input type="hidden" name="intro"></label>
+          <div class="in">
+            <button type="button" class="nextQuestion nxtQ">Démarrer</button>
+          </div>
+      </div>
         
         <div class="question" id="question1">
+            <p class="q">C'est parti! Avant d'entamer notre enquete et pour mieux classer nos résultats nous aimerions en savoir un peu plus sur vous.</p>
             <p class="q">Êtes vous ?</p>
             <label class="option">
               <input type="radio" name="rs1" value="1">
@@ -85,6 +94,7 @@
   
   
         <div class="question" id="question5">
+          <p class="q">Parfait! Continuons-donc notre questionnaire en donnant en premier lieu votre opinion à propos de L’Intelligence Artificielle!</p>
           <p class="q">Avez-vous entendu parler de l'Intelligence Artificielle (IA) ?</p>
           <label><input type="radio" name="q1" value="1"> <span>Oui</span></label><br>
           <label><input type="radio" name="q1" value="2"> <span>Non</span></label><br>
@@ -143,8 +153,27 @@
             <button type="button" id="btnq44" class="nextQuestion nxtQ">Suivant</button>
           </div>
         </div>
+
+        <div class="question " id="question13">
+          <p class="q">Croyez-vous que l'IA a ou aura dans le futur le potentiel pour remplacer la pensée humaine ?</p>
+          <label><input type="radio" name="q9" value="1"> <span>Oui</span></label><br>
+          <label><input type="radio" name="q9" value="2"> <span>Non</span></label><br>
+          <div class="in">
+            <button type="button" class="nextQuestion nxtQ">Suivant</button>
+          </div>
+        </div>
+
+        <div class="question " id="question15">
+          <p class="q">Seriez-vous intéressé(e) à participer à un projet de recherche combinant l'IA et l'exploration de la conscience humaine ?</p>
+          <label><input type="radio" name="q11" value="1"> <span>Oui</span></label><br>
+          <label><input type="radio" name="q11" value="2"> <span>Non</span></label><br>
+          <div class="in">
+            <button type="button" class="nextQuestion nxtQ">Suivant</button>
+          </div>
+        </div>
         
         <div class="question " id="question9">
+          <p class="q">C'est bien jusqu'à présent! Abordons la partie des OVNI pour finaliser ce questionnaire.</p>
           <p class="q">Avez-vous déjà été témoin d'une observation d'OVNI ?</p>
           <label><input type="radio" name="q5" value="1"> <span>Oui</span></label><br>
           <label><input type="radio" name="q5" value="2"> <span>Non</span></label><br>
@@ -181,14 +210,7 @@
         </div>
   
   
-        <div class="question " id="question13">
-          <p class="q">Croyez-vous que l'IA a ou aura dans le futur le potentiel pour remplacer la pensée humaine ?</p>
-          <label><input type="radio" name="q9" value="1"> <span>Oui</span></label><br>
-          <label><input type="radio" name="q9" value="2"> <span>Non</span></label><br>
-          <div class="in">
-            <button type="button" class="nextQuestion nxtQ">Suivant</button>
-          </div>
-        </div>
+        
   
   
         <div class="question " id="question14">
@@ -201,20 +223,13 @@
         </div>
   
   
-        <div class="question " id="question15">
-          <p class="q">Seriez-vous intéressé(e) à participer à un projet de recherche combinant l'IA et l'exploration de la conscience humaine ?</p>
-          <label><input type="radio" name="q11" value="1"> <span>Oui</span></label><br>
-          <label><input type="radio" name="q11" value="2"> <span>Non</span></label><br>
-          <div class="in">
-            <button type="button" class="nextQuestion nxtQ">Suivant</button>
-          </div>
-        </div>
+       
   
   
         <div class="question " id="question16">
           
           
-          <p class="q">Vous voulez arrondir vos fins de mois en vous amusant ? Gagner de l’argent en donnant votre avis! C’est possible en faisant partie de notre panel gratuitement.</p>
+          <p class="q">Notre questionnaire touche à sa fin! Nous serions ravis de vous compter parmi les membres de notre panel. Voudriez-vous gagner des points Fidelio? Pour chacune de vos participations, vous recevrez des points en récompense que vous pouvez échanger en cadeaux sur notre catalogue Gift...dédié exclusivement à nos panélistes.</p>
           <label><input type="radio" name="q12" value="1"> <span>Oui</span></label><br>
           <label><input type="radio" name="q12" value="2"> <span>Non</span></label><br>
           <div class="in">
@@ -224,13 +239,16 @@
   
   
         <div class="question " id="question17">
-          <p class="q">Pourriez-vous nous communiquer votre adresse mail ? <i>(facultatif)</i> </p>
+          <p class="q" id="txthide">Pourriez-vous nous communiquer votre adresse mail ? <i>(facultatif)</i> </p>
           <div class="in ">
-            <label class="txt"><input type="text"  name="email" id="email" required></label>
-            <button type="button" class="txtbtnnext  nextQuestion">Suivant</button>
+            <label class="txt" id="inputhide"><input type="text"  name="email" id="email" required></label>
+            <button type="button" id="btnhide" class="txtbtnnext  nextQuestion">Suivant</button>
             <button type="submit" style="margin-top: 80px;" class="nxtQ" id="submit">Envoyer</button>
+
+
           </div>
         </div>
+
         
   
   

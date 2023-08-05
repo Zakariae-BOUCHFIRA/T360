@@ -70,13 +70,13 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
           if (currentQuestion.find("input[type='radio'][name='q2'][value='2']").is(":checked")) {
             currentQuestion.append("<div class='responseD'><p class='response'>" + on[1] + "</p></div>");
             nextQuestion=nextQuestion.next(".question");
-            nextQuestion.show();
+            nextQuestion.show(1000);
           }
           else{
               // Validate current question before proceeding to the next one
-            var currentInput = currentQuestion.find("input:radio:checked, input:checkbox:checked, input:text").closest("label").find("input");
+            var currentInput = currentQuestion.find("input:radio:checked, input:checkbox:checked, input:text, input:hidden").closest("label").find("input");
             
-            if (currentInput.length === 0 || (currentInput.is(":radio") && currentInput.filter(":checked").length === 0) || (currentInput.is(":checkbox") && currentInput.filter(":checked").length === 0) || (currentInput.is(":text") && currentInput.val() == "" && currentInput.attr("name")!="email") ) {
+            if (currentInput.length === 0 || (currentInput.is(":radio") && currentInput.filter(":checked").length === 0) || (currentInput.is(":checkbox") && currentInput.filter(":checked").length === 0) || (currentInput.is(":text") && currentInput.val() == "" && currentInput.attr("name")!="email") && currentInput.attr("name")!="intro" ) {
                 // Show an error message or perform any necessary validation logic
                 $('.error').html("Veuillez choisir une réponse");
 
@@ -166,9 +166,8 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
                         return;
                     }
                 }
-                if(currentQuestion.attr("id")=="question17") {
-                  $("#submit").show();
-                }
+                
+
             }
             
             var checkedValues = [];
@@ -285,11 +284,36 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
             currentQuestion.find("input").prop("disabled", true);
 
             currentQuestion.find(".nextQuestion, .txt").hide();
-            if(currentQuestion.attr("id")!="question17"){
-                nextQuestion.show();
-            }else{
-                nextQuestion.hide();
+            
+            
+            var radioGroup = document.getElementsByName('q12');
+             
+
+            if(currentQuestion.attr("id")=="question17"){
+              nextQuestion.hide();
+              
+              $("#submit").show();
+            }else if(currentQuestion.attr("id")=="question16" && radioGroup[1].checked) 
+            {
+              nextQuestion.show();
+              $("#txthide").hide();
+              $("#inputhide").hide();
+              $("#btnhide").hide();
+              $("#submit").show();
+              $("#submit").css("margin-top","0px");
+              $("#email").prop("required", false);
+
+            }else if(currentQuestion.attr("id")=="question16" && radioGroup[0].checked) 
+            {
+              nextQuestion.show();
             }
+            else{
+              nextQuestion.show(500);
+            }
+            
+
+            
+          
             
 
             
@@ -326,4 +350,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
 
 
 });
+
+
+
 
