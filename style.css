@@ -95,16 +95,17 @@ input[type="radio"]:checked + span{
 }
 
 
-input[type="radio"]:hover + span{
-  background-color: #1b8bb1;
-  color: white;
-}
 
 input[type="radio"]:checked + span:before{
   height: 7px;
   width: 7px;  
   border:5px solid white;
   background-color: #1b8bb1;
+}
+
+input[type="radio"]:hover + span{
+  background-color: #1b8bb1;
+  color: white;
 }
 
 input[type="radio"]:hover + span:before{
@@ -114,16 +115,30 @@ input[type="radio"]:hover + span:before{
   background-color: #1b8bb1;
 }
 
+
+@media only screen and (min-width: 1152px) {
+  input[type="checkbox"]:hover + span{
+    background-color: #1b8bb1;
+    color: white;
+  }
+
+  input[type="checkbox"]:hover + span:before{
+    height: 7px;
+    width: 7px;  
+    border:5px solid white;
+    background-color: #1b8bb1;
+  }
+  
+}
+
+
 input[type="checkbox"]:checked + span{
   background-color: #1b8bb1;
   color: white;
 }
 
 
-input[type="checkbox"]:hover + span{
-  background-color: #1b8bb1;
-  color: white;
-}
+
 
 input[type="checkbox"]:checked + span:before{
   height: 7px;
@@ -132,12 +147,7 @@ input[type="checkbox"]:checked + span:before{
   background-color: #1b8bb1;
 }
 
-input[type="checkbox"]:hover + span:before{
-  height: 7px;
-  width: 7px;  
-  border:5px solid white;
-  background-color: #1b8bb1;
-}
+
 
 
 .spansexe{
