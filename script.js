@@ -9,7 +9,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
   $(document).ready(function() {
     $("input[name='q3']").change(function() {
       var $checkboxes = $("input[name='q3']:checked");
-      if ($checkboxes.length > 3) {
+      if ($checkboxes.length == 4) {
         $(this).prop('checked', false);
       }
     });
@@ -31,7 +31,7 @@ const q8=["Identification erronée d'aéronefs ou d'objets conventionnels","Proj
 
     $("input[name='q4']").change(function() {
       var $checkboxes = $("input[name='q4']:checked");
-      if ($checkboxes.length > 3) {
+      if ($checkboxes.length == 4) {
         $(this).prop('checked', false);
       }
     });
